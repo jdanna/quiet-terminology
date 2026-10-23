@@ -1,0 +1,4 @@
+# @(#)quiet-terminology / git / .gitignore / 2026-10-23
+
+__pycache__/
+*.pyc

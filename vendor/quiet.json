@@ -1,0 +1,86 @@
+{
+  "source": {
+    "repository": "quiet",
+    "commit": "33f609e3cc8f6a31db777e140ae41209c3d5334f",
+    "anchors": "spec/quiet-{day,night}.json",
+    "terminal": "ports/kitty/Quiet {Day,Night}.conf"
+  },
+  "modes": {
+    "day": {
+      "anchors": {
+        "field": "EEEADF",
+        "surface": "E6E9E2",
+        "structure": "E4EAED",
+        "ink": "1B1F1C",
+        "muted": "616B65",
+        "line": "CDD1CA",
+        "mineral": "4A6E7A",
+        "moss": "586E5C",
+        "ochre": "85602E",
+        "rust": "8F5A42"
+      },
+      "terminal": {
+        "background": "EEEADF",
+        "text": "1B1F1C",
+        "bold": "1B1F1C",
+        "cursor": "4A6E7A",
+        "ansi": [
+          "1B1F1C",
+          "8F5A42",
+          "586E5C",
+          "85602E",
+          "4A6E7A",
+          "755E82",
+          "4C706B",
+          "CDD1CA",
+          "616B65",
+          "99593C",
+          "56705B",
+          "8D611F",
+          "44707F",
+          "7A5E8A",
+          "45726C",
+          "EEEADF"
+        ]
+      }
+    },
+    "night": {
+      "anchors": {
+        "field": "1C1E1C",
+        "surface": "242925",
+        "structure": "222A2D",
+        "ink": "E2E0D7",
+        "muted": "9AA29C",
+        "line": "343B38",
+        "mineral": "789AA3",
+        "moss": "879A83",
+        "ochre": "B49A67",
+        "rust": "C47D6B"
+      },
+      "terminal": {
+        "background": "1C1E1C",
+        "text": "E2E0D7",
+        "bold": "E2E0D7",
+        "cursor": "789AA3",
+        "ansi": [
+          "1C1E1C",
+          "C47D6B",
+          "879A83",
+          "B49A67",
+          "789AA3",
+          "9C89B4",
+          "7A9C93",
+          "9AA29C",
+          "343B38",
+          "D07B65",
+          "879E83",
+          "BC9C5D",
+          "759EA9",
+          "A189BD",
+          "77A196",
+          "E2E0D7"
+        ]
+      }
+    }
+  }
+}
