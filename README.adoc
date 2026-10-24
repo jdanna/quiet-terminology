@@ -4,6 +4,8 @@ Quiet Day and Quiet Night color schemes for
 https://www.enlightenment.org/about-terminology[Terminology], ported from
 https://github.com/chrismecca/quiet[Quiet].
 
+image::screenshots/quiet-night.png[Quiet Night in Terminology]
+
 ----
 make install
 terminology -C 'Quiet Night'
