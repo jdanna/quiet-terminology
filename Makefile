@@ -1,4 +1,4 @@
-# @(#)quiet-terminology / make / Makefile / 2026-10-23
+# @(#)quiet-terminology / make / Makefile / 2026-10-26
 
 PYTHON ?= python3
 EET ?= eet
@@ -9,8 +9,8 @@ TOOL := $(PYTHON) tools/quiet_terminology.py
 CONFIG_HOME ?= $(if $(XDG_CONFIG_HOME),$(XDG_CONFIG_HOME),$(HOME)/.config)
 DEST ?= $(CONFIG_HOME)/terminology/colorschemes
 
-DAY := colorschemes/Quiet Day.eet
-NIGHT := colorschemes/Quiet Night.eet
+DAY := colorschemes/quiet-day.eet
+NIGHT := colorschemes/quiet-night.eet
 
 .DEFAULT_GOAL := check
 
@@ -37,6 +37,8 @@ install:
 	mkdir -p "$(DEST)"
 	cp "$(DAY)" "$(NIGHT)" "$(DEST)/"
 
+# Also removes the schemes' names before quiet 0.5.0.
 .PHONY: uninstall
 uninstall:
+	rm -f "$(DEST)/quiet-day.eet" "$(DEST)/quiet-night.eet"
 	rm -f "$(DEST)/Quiet Day.eet" "$(DEST)/Quiet Night.eet"
